@@ -81,9 +81,6 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: rails_app_template_pg_production
-    username: rails_app_template_pg
-    password: <%= ENV["RAILS_APP_TEMPLATE_PG_DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
     database: rails_app_template_pg_production_cache
